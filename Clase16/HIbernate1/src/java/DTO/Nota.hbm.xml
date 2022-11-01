@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-11-2016 03:06:06 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="DTO.Nota" table="nota" catalog="curso">
+        <id name="idNota" type="java.lang.Integer">
+            <column name="id_nota" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="alumno" class="DTO.Alumno" fetch="select">
+            <column name="rut" length="20" not-null="true" />
+        </many-to-one>
+        <property name="nota" type="int">
+            <column name="nota" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

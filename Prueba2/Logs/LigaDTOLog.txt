@@ -1,0 +1,7 @@
+Error en create Jugador:com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'clasificacion' at row 1
+Error en create Liga:com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`campeonato`.`liga`, CONSTRAINT `fk1` FOREIGN KEY (`id_equipo`) REFERENCES `equipo` (`id_equipo`))
+Error en update Liga:java.sql.SQLException: Incorrect integer value: 'momoratody' for column 'id_liga' at row 1
+Error en update Liga:java.sql.SQLException: Incorrect integer value: 'momoratody' for column 'id_liga' at row 1
+Error en update Liga:java.sql.SQLException: Incorrect integer value: 'momoratody' for column 'id_liga' at row 1
+Error en create Liga:com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'nombre' cannot be null
+Error en create Liga:com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'nombre' cannot be null

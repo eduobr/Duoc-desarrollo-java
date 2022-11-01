@@ -1,0 +1,1 @@
+Error en create Jugador:com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'

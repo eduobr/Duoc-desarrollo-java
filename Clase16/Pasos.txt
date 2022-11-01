@@ -1,0 +1,34 @@
+Pasos Hibernate:
+1)- configurar el hibernate.cfg.xml
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/curso?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+  </session-factory>
+</hibernate-configuration>
+
+2)- Estructuramos la aplicacion : package controlador, dto, dao, 
+
+3)- Creamos el HibernateUtil.java dentro de dao. y cambiamos el AnnotationConfiguration por
+Configuration.
+
+4)- creamos en el default package: el hibernate reverse engineering wizard
+
+5)- creamos las pojos, Hibernate Mapping files and Poojpos, realizamos el mapeo de la bd transformandolas en las pojos.
+
+6)- instanciamos los controladores creados dentro de dispatcher-servlet.xml
+
+<bean class="controlador.alumnoController" id="alumnosKey"/> 
+
+	<prop key="alumnos.htm">alumnosKey</prop>
+
+6.5)- crear DAO
+
+7)- crear servlet
+
+8)- crear tester para probar

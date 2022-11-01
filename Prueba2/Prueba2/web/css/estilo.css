@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    font-size: 13px;
+    background: #fff;
+    font-family: serif;
+    font-size: medium;
+
+}
+.encabezado{
+    
+    height: 61px;
+
+    
+}
+
+.cuerpo{
+    margin: 5px auto;
+    max-width: 1800px;
+    min-height: 600px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.pie{
+    margin: 5px auto;
+    max-width: 965px;
+    height: 36px;
+    padding-top: 20px;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+}
+#Logo{
+    padding: 14px;
+    float: left;
+}
+
+.item_m{
+    float: left;
+    font-size: 16;
+    padding: 10px;
+}
+.item_l{
+    float: right;
+    font-size: 16;
+    padding: 10px;
+}
+
+.buscador-campo{
+    margin-bottom: 0px !important;
+}
+#buscador{
+    float: right;
+    margin: 17px 12px 0px 0px;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>servletJugador</servlet-name>
+        <servlet-class>controlador.servletJugador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletEquipo</servlet-name>
+        <servlet-class>controlador.servletEquipo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletListarEquipo</servlet-name>
+        <servlet-class>controlador.servletListarEquipo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletLiga</servlet-name>
+        <servlet-class>controlador.servletLiga</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletJugador</servlet-name>
+        <url-pattern>/servletJugador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletEquipo</servlet-name>
+        <url-pattern>/servletEquipo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletListarEquipo</servlet-name>
+        <url-pattern>/servletListarEquipo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletLiga</servlet-name>
+        <url-pattern>/servletLiga</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
